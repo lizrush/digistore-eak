@@ -1,4 +1,35 @@
-/* Put your CSS here */
-html, body {
-    margin: 20px;
+#header-image {
+  display: inline;
+  padding: 5px;
+}
+
+.lead {
+  display: inline;
+  margin-bottom: 0px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar {
+  background-color: #FFF;
+  border: none;
+}
+
+.table {
+   text-align: center;
+}
+
+.table th {
+   text-align: center;
+}
+
+.table tbody tr td {
+   text-align: center;
+   vertical-align: middle;
+}
+
+.quantity-table {
+  float:none;
 }
