@@ -1,0 +1,30 @@
+<h1>
+  {{ name }}
+  <small class='muted'>(price: {{ format-money price }})</small>
+</h1>
+
+<div class='row'>
+  <div class='col-lg-8'>
+    <img {{ bind-attr src=image }} class='thumbnail col-lg-10' />
+  </div>
+  <div class='col-lg-4'>
+    <table>
+    <tbody>
+    <tr>
+      <td colspan="2">
+        {{ description }}
+      </td>
+    </tr>
+    <tr><td colspan="2"><hr></td></tr>
+    <tr>
+      <td>
+        {{ format-money price }}
+      </td>
+      <td>
+        <button {{ action "addToCart" this }} class="btn btn-primary">Add to Cart</button>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+</div>

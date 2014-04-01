@@ -1,0 +1,30 @@
+<h1>Orders Index</h1>
+<div class='row'>
+  <div class='col-lg-10'>
+    <table class='table table-hover'>
+      <thead>
+        <th>Customer</th>
+        <th>Update</th>
+        <th>Status</th>
+      </thead>
+      <tbody>
+        {{#each}}
+          <tr>
+            <td>
+              {{# link-to "order" this}}
+                {{ customer_name }}
+              {{/ link-to }}
+            </td>
+            <td>
+              <button {{ action 'markAsPaid' this }} class="btn btn-sm btn-primary">Mark as paid</button>
+              <button {{ action 'markAsCanceled' this }} class="btn btn-sm btn-danger">Cancel</button>
+            </td>
+            <td>
+              {{ status }}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
