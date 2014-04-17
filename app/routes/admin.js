@@ -1,4 +1,4 @@
-export default App.AdminRoute = Ember.Route.extend({
+export default Ember.Route.extend({
   model: function(){
     return { products: this.store.find('product'), orders: this.store.find('order') }
   },

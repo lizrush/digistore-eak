@@ -1,4 +1,4 @@
-export default App.ProductNewRoute = Ember.Route.extend({
+export default Ember.Route.extend({
   model: function (params) {
     return {};
   },

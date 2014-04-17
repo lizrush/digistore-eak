@@ -1,8 +1,4 @@
-export default App.ItemAdapter = DS.LSAdapter.extend({
-  namespace: 'kittyimages'
-});
-
-App.Item = DS.Model.extend({
+var Item = DS.Model.extend({
   product_id: DS.attr('string'),
   product_name: DS.attr('string'),
   product_avatar: DS.attr('string'),
@@ -12,3 +8,5 @@ App.Item = DS.Model.extend({
     return this.get('quantity') * this.get('currentprice')
   }.property('quantity', 'currentprice')
 })
+
+export default Item;

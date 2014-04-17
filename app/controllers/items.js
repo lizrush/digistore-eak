@@ -1,4 +1,4 @@
-export default App.ItemsController = Ember.ArrayController.extend({
+export default Ember.ArrayController.extend({
   cartTotal: function() {
     return this.get('content').reduce(function(subtotal, item) {
       return subtotal + item.get('subtotal');

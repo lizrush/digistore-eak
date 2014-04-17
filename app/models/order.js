@@ -1,4 +1,4 @@
-export default App.Order = DS.Model.extend({
+var Order = DS.Model.extend({
   customer_name: DS.attr('string'),
   email: DS.attr('string'),
   status: DS.attr('string'),
@@ -8,3 +8,5 @@ export default App.Order = DS.Model.extend({
   ccnumber: DS.attr('string'),
   total: DS.attr('string')
 });
+
+export default Order;

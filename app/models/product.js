@@ -1,4 +1,4 @@
-export default App.Product = DS.Model.extend({
+export default DS.Model.extend({
   name: DS.attr("string"),
   price: DS.attr("number"),
   description: DS.attr("string"),

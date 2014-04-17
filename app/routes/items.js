@@ -1,4 +1,4 @@
-export default App.ItemsRoute = Ember.Route.extend({
+export default Ember.Route.extend({
   model: function () {
     return this.store.find('item')
   },

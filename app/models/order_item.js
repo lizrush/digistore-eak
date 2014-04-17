@@ -1,4 +1,4 @@
-export default App.OrderItem = DS.Model.extend({
+export default  DS.Model.extend({
   product_id: DS.attr('string'),
   product_name: DS.attr('string'),
   product_avatar: DS.attr('string'),
