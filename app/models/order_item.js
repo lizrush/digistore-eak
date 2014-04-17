@@ -5,6 +5,6 @@ export default  DS.Model.extend({
   currentprice: DS.attr('number'),
   quantity: DS.attr('number'),
   subtotal: function(){
-    return this.get('quantity') * this.get('currentprice')
+    return this.get('quantity') * this.get('currentprice');
   }.property('quantity', 'currentprice')
-})
+});

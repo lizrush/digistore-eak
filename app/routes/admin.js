@@ -1,6 +1,8 @@
 export default Ember.Route.extend({
   model: function(){
-    return { products: this.store.find('product'), orders: this.store.find('order') }
+    var products = this.store.find('product');
+    var orders = this.store.find('order');
+    return products, orders;
   },
 
   actions: {

@@ -4,5 +4,4 @@ export default DS.Model.extend({
   description: DS.attr("string"),
   image: DS.attr("string"),
   avatar: DS.attr("string")
-})
-
+});

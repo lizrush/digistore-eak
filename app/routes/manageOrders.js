@@ -5,12 +5,12 @@ export default Ember.Route.extend({
   actions: {
     markAsPaid: function(order){
         order.set('status', 'paid');
-        order.save()
+        order.save();
     },
 
     markAsCanceled: function(order){
         order.set('status', 'Canceled');
-        order.save()
+        order.save();
     }
   }
 });

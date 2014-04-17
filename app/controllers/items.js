@@ -9,22 +9,22 @@ export default Ember.ArrayController.extend({
 
   actions: {
     checkout: function(){
-      this.set('checkout', true)
+      this.set('checkout', true);
     },
 
     applyChanges: function(quantity) {
       this.get('model').save(function(item){
-        item.set('quantity', quantity)
+        var self = this;
+        item.set('quantity', quantity);
         item.save().then(
           function(order){
-            self.transitionTo('items')
+            self.transitionTo('items');
           },
           function(error){
-            console.log('it didnt work');
-            alert(error.responseText)
+            window.alert(error.responseText);
           }
         );
       });
     }
   }
-})
+});

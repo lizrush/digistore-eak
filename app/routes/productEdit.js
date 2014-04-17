@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   actions: {
     saveProduct: function (product) {
       product.save();
-      this.transitionTo('admin')
+      this.transitionTo('admin');
     }
   }
 });
