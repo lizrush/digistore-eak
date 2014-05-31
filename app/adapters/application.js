@@ -1,4 +1,4 @@
 export default DS.RESTAdapter.extend({
-    host: "http://digistore-api.herokuapp.com/"
+    host: "http://kittyimages-api.herokuapp.com/"
 });
 
